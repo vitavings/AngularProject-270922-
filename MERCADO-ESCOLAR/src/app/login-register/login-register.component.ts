@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginRegisterComponent implements OnInit {
 
+  isRegisterEnabled=false
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  togleRegistration(){
+    this.isRegisterEnabled=true
+  }
+  togleSignin(){
+    this.isRegisterEnabled=false
   }
 
 }
